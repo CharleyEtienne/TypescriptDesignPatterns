@@ -1,3 +1,4 @@
 .cache
 .idea
 CommandPattern/node_modules/
+AbstractFactoryPattern/node_modules/
