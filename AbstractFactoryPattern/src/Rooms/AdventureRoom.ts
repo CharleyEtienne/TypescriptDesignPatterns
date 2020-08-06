@@ -8,9 +8,4 @@ export default class AdventureRoom extends Room
         super(slots);
         console.log('New Adventure Room has been created !')
     }
-
-    public toString()
-    {
-        console.log('Adventure Room with ' + this.slots + ' slots')
-    }
 }
