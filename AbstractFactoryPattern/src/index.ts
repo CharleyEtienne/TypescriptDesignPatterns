@@ -12,7 +12,9 @@ function CreateRoomForMode(mode: string, type: TypeSlots, factories: FactoryWare
     const room = factory.createRoom(type)
     if (null !== player) room.join(player)
     room.toString()
+    console.log('')
 }
 
 CreateRoomForMode('Adventure', TypeSlots.SOLO, factoryWarehouse, player)
 CreateRoomForMode('Ranked', TypeSlots.MULTI, factoryWarehouse)
+CreateRoomForMode('Adventure', TypeSlots.MULTI, factoryWarehouse)

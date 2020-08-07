@@ -4,8 +4,8 @@ export default class RankedRoom extends Room
 {
     private GameMode = 'Ranked'
 
-    constructor(slots: number) {
-        super(slots);
+    constructor(slots: number, gameInstance: string) {
+        super(slots, gameInstance);
         console.log('New Ranked Room has been created !')
     }
 }
