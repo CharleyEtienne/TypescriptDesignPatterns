@@ -1,4 +1,5 @@
 export default interface Component
 {
-    getName(): string
+    hasKey(key: string): boolean
+    serialize(): any
 }

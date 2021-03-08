@@ -9,11 +9,16 @@ export default class TeamComponent implements Component
     }
 
     get team(): string {
-        console.log(this._teamName)
         return this._teamName
     }
 
-    getName(): string {
-        return 'team'
+    hasKey(value: string): boolean {
+        return 'team' === value
+    }
+
+    serialize(): any {
+        return {
+            team: this._teamName
+        }
     }
 }
